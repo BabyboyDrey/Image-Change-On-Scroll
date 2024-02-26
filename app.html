@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="section">
+      <div class="section-img">
+        <div
+          class="section-img-inner"
+          style="
+            background-image: url('data:image/jpeg;base64,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');
+          "
+        ></div>
+      </div>
+      <div class="section-body">
+        <div class="section-text">
+          <h2>Title Text 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            tempora rem voluptate quae iure sed doloribus quos cum, aut quo
+            perspiciatis, quas quaerat voluptatibus? Rerum illo incidunt at eius
+            et?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-img">
+        <div
+          class="section-img-inner"
+          style="
+            background-image: url('https://img.freepik.com/free-psd/isolated-opened-notebook_125540-1292.jpg?size=626&ext=jpg&ga=GA1.2.195282130.1674397611&semt=sph');
+          "
+        ></div>
+      </div>
+      <div class="section-body">
+        <div class="section-text">
+          <h2>Title Text 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            error quasi consectetur ut fuga iure ratione vero est ab odit
+            necessitatibus, blanditiis voluptates? Nihil consequatur corporis
+            nulla quisquam, fugiat repellendus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-img">
+        <div
+          class="section-img-inner"
+          style="
+            background-image: url(https://img.freepik.com/premium-psd/render-isolated-plant-isometric-front-view-transparent-wall-premium-3d_92267-242.jpg?size=626&ext=jpg&ga=GA1.1.195282130.1674397611&semt=sph);
+          "
+        ></div>
+      </div>
+      <div class="section-body">
+        <div class="section-text">
+          <h2>Title Text 3</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+            harum odit a, quo, accusantium doloribus nobis impedit cupiditate,
+            perspiciatis consequatur dolores possimus amet delectus? Quo cumque
+            temporibus quis fugiat voluptas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
